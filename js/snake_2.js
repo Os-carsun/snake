@@ -56,11 +56,11 @@ var SnakeClass = (function () {
       if( (document.getElementById(this.head.y+'_'+this.head.x+'_F') ) != null ){
 
         var d = document.getElementById(this.head.y+'_'+this.head.x+'_F');
-        that.body.unshift({x : this.head.x, y : this.head.y}); 
+        this.body.unshift({x : this.head.x, y : this.head.y}); 
         d.style.background = "yellow";
         d.id = this.head.y + '_' + this.head.x + "_B";
         
-        that.randomFood();
+        this.randomFood();
       
       }
       this.clear(this.body.pop());
