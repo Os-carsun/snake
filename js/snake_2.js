@@ -100,7 +100,6 @@ var SnakeClass = (function () {
     this.start();
     this.randomFood();
     this.paintSankeBody(0,4);
-    var that = this;
     document.onkeydown = function(e){
       switch(e.keyCode){
         case 38:
